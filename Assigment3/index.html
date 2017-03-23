@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="CSS/styles.css"  />
+    <link type="text/css" rel="stylesheet" href="CSS/flexbox.css"  />
+
+
+</head>
+
+
+<body>
+<div class="header">
+Maurita Ament
+    Class of 2017
+
+
+</div>
+<div class ="col-12">
+    <ul class="nav">
+        <li class="nav"><a class="active" href="#home">Home</a></li>
+        <li class="nav"><a href="#aboutMe">About Me</a></li>
+        <li class="nav"><a href="#projects">Projects</a></li>
+    </ul>
+</div>
+
+
+
+<div class="row" >
+    <div class="col-12" id="main">
+
+        <div class="row" >
+            <div class="col-12" >
+                <div class="w3-content w3-display-container" style="max-width:800px; height: 250px; margin-bottom: 50px;">
+                    <img class="mySlides" src="http://www.geek.com/wp-content/uploads/2009/11/iMac-500-x-433.jpg" style="width:100%" height="250px; ">
+                    <img class="mySlides" src="http://trichilofoods.com/site/wp-content/uploads/2015/06/veggies.jpg" style="width:100%" height="250px">
+                    <img class="mySlides" src="http://neowebsitedesign.com/wp-content/uploads/2015/10/Canton-Website.jpg" style="width:100%" height="250px">
+                    <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%; " >
+                        <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                        <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    </div>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+
+                    function currentDiv(n) {
+                        showDivs(slideIndex = n);
+                    }
+
+                    function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" w3-white", "");
+                        }
+                        x[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " w3-white";
+                    }
+                </script>
+
+
+
+                <b>Major:</b>  Computer Science
+                <p>
+                    <b>Why I Chose Computer Science</b><p>
+
+
+                I want to change and close the gap in the Computer Science field between genders and ethnicities. Women, especially African American women, are highly underrepresented in this lucrative and innovative field which I want to change. I hope to one day create some form of technology that will benefit society while casting an ever brighter spotlight on the successful advancements of women and African Americans.  I wholeheartedly believe that knowledge is power, ambition is imperative, and the Tapia  2014 Conference will give me unique intellectual tools to broaden my perspective of how change the world around me in ways I never thought possible.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6"   >
+                <h3>My Hobbies</h3>
+
+                <ul style="background-color: whitesmoke">
+                    <li> Workout</li>
+                    <li> Bar Hop</li>
+                    <li> Cook </li>
+                    <li> Travel/Explore New Areas </li>
+                    <li> Read the News</li>
+                </ul>
+
+            </div>
+            <div class="col-6">
+                <h3>My CS Skills</h3>
+
+                <ol>
+                    <li> Python</li>
+                    <li> Web Design</li>
+                    <li> Angular JS </li>
+                    <li> Team Work </li>
+                    <li> Java</li>
+                </ol>
+            </div>
+        </div>
+        <div class ="row">
+            <div class="col-6" style="float:right">
+                <h3>Jobs</h3>
+                <ul>
+                    <li><b>Apple: </b><a href="http://www.apple.com/">Click Here</a> </li>
+                    <li><b>Discover Financial Services:</b> <a href="https://www.discover.com/">Click Here</a></li>
+                    <li><b>North Village Group:</b> <a href="http://www.northvillagegroup.com">Click Here</a></li>
+                    <li><b>Spelman College:</b> <a href="http://www.spelman.edu/">Click Here</a></li>
+                    <li><b>Jamba Juice:</b> <a href="http://www.jambajuice.com/">Click Here</a></li>
+                </ul>
+
+            </div>
+
+            <div class="col-6" style="float: left">
+
+                <h3>About Me</h3>
+                <p></p>
+                    <div class = "card">
+                    <img  height="300px" style="max-width:100%" align="center" src ="CSS/aboutMePic.jpg">
+
+                        <div style ="background-color: #f1f1f1; border-left: solid 0.5px #FFFFFF; border-right: solid 0.5px #FFFFFF;  border-bottom: solid 0.5px #FFFFFF; height: 100px; overflow: scroll;">
+                            My name is Maurita Ament and I am a senior Computer Science major at Spelman College. I was born in
+                            Pheonix, AZ but grew up in a small suburban town in California named Claremont. I have travelled a lot.
+                            I used to live in Rome, Italy for 3 years. It was there that I found my passion for cooking. I love to cook
+                            meals for my family and friend. My favorite dish to cook currently is Tikka Masala. It is a delicious
+                            Indian cusine. Curry is life.
+                        </div>
+
+
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class = "footer col-12 " style ="background-color: slategray">
+    Maurita Ament<br>
+    Contact Info: mament@scmail.spelman.edu
+
+</div>
+
+</body>
+</html>
